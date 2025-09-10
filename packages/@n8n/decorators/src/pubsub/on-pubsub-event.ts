@@ -34,6 +34,12 @@ export const OnPubSubEvent =
 			throw new NonMethodError(`${eventHandlerClass.name}.${methodName}()`);
 		}
 
+		console.log('Registering PubSub event handler', {
+			eventHandlerClass,
+			methodName,
+			eventName,
+			filter,
+		});
 		Container.get(PubSubMetadata).register({
 			eventHandlerClass,
 			methodName,

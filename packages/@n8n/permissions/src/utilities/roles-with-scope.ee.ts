@@ -2,7 +2,6 @@ import { ALL_ROLE_MAPS } from '../roles/role-maps.ee';
 import type {
 	CredentialSharingRole,
 	GlobalRole,
-	ProjectRole,
 	RoleNamespace,
 	Scope,
 	WorkflowSharingRole,
